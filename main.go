@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	//numbers := []int{1, 2, 3, 4, 5}
+	numbers := []int{1, 2, 3, 4, 5}
 	sum := sumup(5, 1, 10, 15)
 	fmt.Println(sum)
 
-	sum2 := sumup(7, 1, 2, 3, 4, 5)
+	sum2 := sumup(7, numbers...)
 	fmt.Println(sum2)
 }
 
